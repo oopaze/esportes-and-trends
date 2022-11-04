@@ -6,7 +6,9 @@ export const MatchCard = styled.div`
   justify-content: center;
   align-items: center;
 
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
+  min-width: 250px;
   min-height: 250px;
 
   padding: 20px;

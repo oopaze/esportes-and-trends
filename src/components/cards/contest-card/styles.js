@@ -6,7 +6,9 @@ export const ContestCard = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
+  min-width: 250px;
   min-height: 300px;
 
   padding: 20px;
