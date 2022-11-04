@@ -1,5 +1,5 @@
 const getUrlSufix = () => {
-  return window.location.pathname.replace("/esportes-agora", "/").replace("/twitter-trends")
+  return window.location.pathname.replace("/esportes-agora", "/").replace("/twitter-trends", "/")
 }
 
 const prefix = getUrlSufix()
@@ -9,5 +9,5 @@ export const generateUrl = (path) => {
 }
 
 export const getPathName = () => {
-  return window.location.pathname.replace(prefix, "/")
+  return window.location.pathname.replace(prefix, "")
 }
