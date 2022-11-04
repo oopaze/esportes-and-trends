@@ -30,6 +30,8 @@ export const ButtonContainer =  styled.div`
 `
 
 export const MatchContainer = styled.div`
+  width: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,6 +42,8 @@ export const MatchContainer = styled.div`
 `
 
 export const CardContainer = styled.div`
+  width: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
