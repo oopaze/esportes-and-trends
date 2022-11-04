@@ -1,4 +1,4 @@
-import { formatMoment } from "utils/formatDate"
+import { formatMoment } from "utils/format-date"
 import * as S from "./styles"
 
 
