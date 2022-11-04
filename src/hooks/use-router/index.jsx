@@ -2,7 +2,6 @@ import {createContext, useCallback, useContext, useEffect, useState } from "reac
 
 import NotFound from "components/not-found"
 import Route from "components/route"
-import { generateUrl, getPathName } from "utils/url-functions"
 
 export const RouterContext = createContext({
   page: {},
@@ -38,8 +37,7 @@ export const RouterContextProvider = ({ children }) => {
 
     if (route) {
       setPage(route)
-      const newPath = generateUrl(route.path)
-      window.history.replaceState({ page: route.name }, route.name, newPath)
+      window.history.replaceState({ page: route.name }, route.name, route.path)
     } else {
       setNotFoundError()
     }
@@ -50,7 +48,7 @@ export const RouterContextProvider = ({ children }) => {
   }
 
   useEffect(() => {
-    const path = getPathName()
+    const path = window.location.pathname
     const route = routes.find((route) => route.path === path)
 
     if (route)
