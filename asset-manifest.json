@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/esportes-and-trends/static/js/main.b9b8d50b.js",
+    "main.js": "/esportes-and-trends/static/js/main.da880252.js",
     "index.html": "/esportes-and-trends/index.html",
-    "main.b9b8d50b.js.map": "/esportes-and-trends/static/js/main.b9b8d50b.js.map"
+    "main.da880252.js.map": "/esportes-and-trends/static/js/main.da880252.js.map"
   },
   "entrypoints": [
-    "static/js/main.b9b8d50b.js"
+    "static/js/main.da880252.js"
   ]
 }
