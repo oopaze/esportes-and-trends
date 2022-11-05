@@ -4,12 +4,12 @@ import Link from "components/link"
 import useTitle from "hooks/use-title"
 
 import getContests from "services/futebol/get-contests"
-
-import * as S from "./styles"
 import Loading from "components/loading"
 import ContestCard from "components/cards/contest-card"
 import getTodayMatches from "services/futebol/get-today-matches"
 import MatchCard from "components/cards/match-card"
+
+import * as S from "./styles"
 
 const EsportesAgora = () => {
   useTitle("Esportes Agora")
