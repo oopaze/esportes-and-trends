@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/esportes-and-trends/static/css/main.df2b2e0b.css",
-    "main.js": "/esportes-and-trends/static/js/main.1e649a2a.js",
+    "main.js": "/esportes-and-trends/static/js/main.9baf341a.js",
     "static/media/do.svg": "/esportes-and-trends/static/media/do.d2287a1e1eee0805fc27.svg",
     "static/media/rs.svg": "/esportes-and-trends/static/media/rs.dc155455e86e12200cb5.svg",
     "static/media/bo.svg": "/esportes-and-trends/static/media/bo.e0a90fef5f7c6c6ab66f.svg",
@@ -269,10 +269,10 @@
     "static/media/bd.svg": "/esportes-and-trends/static/media/bd.0ad8c443ef4d47ea0497.svg",
     "static/media/id.svg": "/esportes-and-trends/static/media/id.f624e2c8444a7794b357.svg",
     "main.df2b2e0b.css.map": "/esportes-and-trends/static/css/main.df2b2e0b.css.map",
-    "main.1e649a2a.js.map": "/esportes-and-trends/static/js/main.1e649a2a.js.map"
+    "main.9baf341a.js.map": "/esportes-and-trends/static/js/main.9baf341a.js.map"
   },
   "entrypoints": [
     "static/css/main.df2b2e0b.css",
-    "static/js/main.1e649a2a.js"
+    "static/js/main.9baf341a.js"
   ]
 }
