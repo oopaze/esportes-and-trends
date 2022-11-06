@@ -20,9 +20,9 @@ const TwitterTrends = () => {
 
   const changeCountry = (receivedCountry) => {
     setShowTrends(false)
-    setIsLoading(true)
-
+    
     setCountry(receivedCountry)
+    setIsLoading(true)
     fetchTrends(receivedCountry).finally(() => setIsLoading(false))
 
     setShowTrends(true)
@@ -42,6 +42,8 @@ const TwitterTrends = () => {
         Twitter Trends
       </S.Title>
 
+      <Link to="home">Voltar para home</Link>
+
       <S.SelectCountryContainer>
         <CountrySelect 
           options={countryOptions} 
@@ -51,16 +53,19 @@ const TwitterTrends = () => {
       </S.SelectCountryContainer>
 
       {isLoading && <Loading />}
-      {showTrends && trends.map((trend) => (
-        <TrendingTopic 
-          url={trend.url} 
-          key={trend.name}
-          tweetVolume={trend.tweet_volume}
-          name={trend.name}
-        />
-      ))}
 
-      <Link to="home">Voltar para home</Link>
+      {showTrends && 
+        <S.TrendsContainer>
+          {trends.map((trend) => (
+            <TrendingTopic 
+              url={trend.url} 
+              key={trend.name}
+              tweetVolume={trend.tweet_volume}
+              name={trend.name}
+            />
+          ))}
+        </S.TrendsContainer>
+      }
     </S.Container>
   )
 }

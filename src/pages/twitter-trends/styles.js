@@ -24,3 +24,12 @@ export const SelectCountryContainer = styled.section`
   align-items: flex-start;
   justify-content: center;
 `
+
+export const TrendsContainer =  styled.section`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 1000px;
+`
