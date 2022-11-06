@@ -1,4 +1,5 @@
 from os import environ
+import logging, json
 
 from flask import Flask, jsonify
 
@@ -19,7 +20,10 @@ async def get_trends(id):
     async with AsyncClient() as client:
         response = await client.get(url, params=params, headers=headers)
 
-    trends = response.json()[0].get("trends", [])
+    data = response.json()
+    logging.error(json.dumps(data))
+
+    trends = data[0].get("trends", []) if len(data) > 0 else []
     return jsonify({"success": True, "trends": trends}), 200
 
 
