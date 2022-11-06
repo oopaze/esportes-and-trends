@@ -2,12 +2,12 @@ from os import environ
 
 from flask import Flask, jsonify
 
-# from flask_cors import CORS
+from flask_cors import CORS
 from httpx import AsyncClient
 from dotenv import load_dotenv
 
 app = Flask(__name__)
-# CORS(app)
+CORS(app)
 
 
 @app.route("/trends/<int:id>", methods=["GET"])
