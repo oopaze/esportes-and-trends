@@ -2,7 +2,7 @@ from os import environ
 
 from flask import Flask, jsonify
 from flask_cors import CORS
-from httpx import get
+from httpx import AsyncClient
 from dotenv import load_dotenv
 
 app = Flask(__name__)
@@ -10,11 +10,13 @@ CORS(app)
 
 
 @app.route("/trends/<int:id>", methods=["GET"])
-def get_trends(id):
+async def get_trends(id):
     params = {"id": id}
     headers = {"Authorization": f"Bearer {environ.get('TWITTER_USER_TOKEN')}"}
     url = "https://api.twitter.com/1.1/trends/place.json"
-    response = get(url, params=params, headers=headers)
+
+    async with AsyncClient() as client:
+        response = await client.get(url, params=params, headers=headers)
 
     trends = response.json()[0].get("trends", [])
     return jsonify({"success": True, "trends": trends}), 200
