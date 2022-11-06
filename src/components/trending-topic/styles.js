@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.a`
-  width: 240px;
+  flex-basis: 100%;
   min-height: 120px;
 
   display: flex;
@@ -18,6 +18,14 @@ export const Container = styled.a`
 
   :hover {
     filter: brightness(1.4);
+  }
+
+  @media (max-width: 400px) {
+    flex-basis: 100%;
+  }
+
+  @media (min-width: 600px) {
+    flex-basis: 48%;
   }
 `
 
