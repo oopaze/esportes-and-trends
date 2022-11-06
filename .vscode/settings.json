@@ -1,4 +1,8 @@
 {
   "editor.formatOnSave": true,
-  "files.insertFinalNewline": true
+  "files.insertFinalNewline": true,
+  "python.defaultInterpreterPath": "./api/.venv/bin/python3",
+  "[python]": {
+    "editor.tabSize": 4
+  },
 }

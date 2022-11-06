@@ -1,7 +1,7 @@
-import client from "services"
+import api from "services/twitter"
 
-const getTrends = () => {
-  return client.get("")
+const getTrends = (countryCode = 1) => {
+  return api.get(`/trends/${countryCode}`)
 }
 
 export default getTrends
