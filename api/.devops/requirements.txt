@@ -1,0 +1,4 @@
+flask==2.2.2
+httpx==0.23.0
+python-dotenv==0.20.0
+flask-cors==3.0.10
