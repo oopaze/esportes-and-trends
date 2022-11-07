@@ -20,12 +20,12 @@ export const Container = styled.a`
     filter: brightness(1.4);
   }
 
-  @media (max-width: 400px) {
-    flex-basis: 100%;
-  }
-
   @media (min-width: 600px) {
     flex-basis: 48%;
+  }
+
+  @media (min-width: 1024px) {
+    flex-basis: 30%;
   }
 `
 
