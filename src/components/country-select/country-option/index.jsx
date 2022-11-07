@@ -9,7 +9,7 @@ const CountryOption = ({ label, value, onClick, isShowing = false }) => {
 
   return (
     <S.OptionContainer 
-      onClick={!isShowing ? onClick : null} 
+      onClick={onClick} 
       isShowing={isShowing}
     > 
       <S.Icon className={countryClassIcon} />

@@ -43,7 +43,7 @@ const CountrySelect = (props) => {
           <CountryOption 
             value={selectedOption.value} 
             label={selectedOption.label}
-            onClick={() => setOption(selectedOption)} 
+            onClick={() => setOption(undefined)} 
             isShowing
           /> 
         ) : (
